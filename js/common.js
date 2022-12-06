@@ -6,8 +6,7 @@ $(function(){
 });
 $(window).resize(function(){
     if(window.innerWidth>=768){
-        $(".header_menu").show();
-    } else {
+        $("#icon").removeClass("active")
         $(".header_menu").hide();
     }
 });
