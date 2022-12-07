@@ -30,7 +30,7 @@ li {
 header {
     font-family: 'bitbit';
     font-size: 30px;
-    background-color: skyblue;
+    background-color: rgb(187, 235, 92);
     width: 100%;
     height: auto;
     line-height: 100px;
@@ -102,13 +102,13 @@ header {
         display: block;
         text-decoration: none;
         padding-left: 10px;
-        color: skyblue;
+        color: rgb(187, 235, 92);
         background-color: #fff;
     }
 
     header ul li a:hover {
         color: #fff;
-        background-color: skyblue;
+        background-color: rgb(187, 235, 92);
     }
 
     .header_menu {
