@@ -126,17 +126,97 @@ section #friends ul {
 #collabo {
     width: 100%;
     height: 600px;
+    display: flex;
     background-color: cadetblue;
+}
+
+#collabo div {
+    flex: 1;
+    overflow: hidden;
 }
 
 #ani {
     width: 100%;
-    height: 300px;
-    background-color: aqua;
+    height: 400px;
+    overflow: hidden;
 }
+
+#ani .hl {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(187, 235, 92);
+}
+
+#ani .slider {
+    font-family: 'bitbit';
+    font-size: 150px;
+    color: rgb(187, 235, 92);
+    width: 2000px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    animation: move 10s linear infinite;
+}
+
+#ani .slider p {
+    flex: 0 0 auto;
+    padding: 0 25px;
+    line-height: 100%;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+  }
 
 #insta {
     width: 100%;
-    height: 600px;
-    background-color: darkorchid;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#insta > p {
+    width: 100%;
+    font-family: 'bitbit';
+    font-size: 100px;
+    color: salmon;
+}
+
+#insta a {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#insta a .photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-size: contain;
+}
+
+#insta a .photo:hover {
+    opacity: 0.3;
+}
+
+#insta a .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';
+    font-size: 25px;
+    color: salmon;
 }
