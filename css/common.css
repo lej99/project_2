@@ -12,9 +12,12 @@
     src: url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'), url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2');
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     background-color: rgb(250, 255, 245);
     font-family: 'KoddiUDOnGothic-Regular';
 }
@@ -144,13 +147,37 @@ header {
     }
 }
 
-
 footer {
     width: 100%;
-    height: 100px;
+    height: auto;
+    position: relative;
+}
+
+footer .footerimg {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: -200px;
+    animation: move2 1s steps(1,start) infinite;
+    animation-play-state: running;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+
+footer .inner {
+    width: 100%;
+    height: 300px;
     background-color: rgb(187, 235, 92);
     font-size: 14px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
 }
