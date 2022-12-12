@@ -10,3 +10,10 @@ $(window).resize(function(){
         $(".header_menu").hide();
     }
 });
+
+$(function(){
+    $("#kero").click(function(){
+        $(".info_in").slideToggle();
+        $(this).toggleClass("active")
+    });
+});
