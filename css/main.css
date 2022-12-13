@@ -7,16 +7,17 @@
 #slider {
     background-color: rgb(187, 235, 92);
     width: 100%;
-    height: 800px;
+    height: 900px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+
 #slider .arch {
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-color: rgb(250, 255, 245);
     border-radius: 600px 600px 0 0;
     position: absolute;
@@ -35,7 +36,9 @@
 
 #slider img {
     position: relative;
+    top: 50px;
 }
+
 #slider p {
     text-align: center;
     line-height: 30px;
@@ -50,6 +53,7 @@
 
 #slider img:nth-of-type(2) {
     left: 100px;
+    top: 300px;
 }
 
 #slider img:nth-of-type(3) {
@@ -59,13 +63,12 @@
 
 #slider img:nth-of-type(4) {
     right: 300px;
-    bottom: 50px;
+    top: 500px;
 }
 
 section {
-    background-color: aqua;
     width: 100%;
-    height: 5000px;
+    height: 2500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,30 +80,29 @@ section .pop {
 }
 
 section article {
-    width: 90%;
+    width: 80%;
     height: auto;
     min-width: 540px;
+    border: 6px dotted rgb(187, 235, 92);
     background-color: #fff;
-}
-
-section #intro {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-section #intro .name {
+section .name {
     font-family: 'bitbit';
     font-size: 3rem;
     color: rgb(187, 235, 92);
 }
 
-section #intro ul {
+section ul {
     flex: 1;
     margin: 1%;
 }
 
-section #intro ul li {
+section ul li {
     padding: 1%;
 }
 
@@ -113,21 +115,10 @@ section #popup li {
     line-height: 50px;
 }
 
-/* section #family ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section #friends ul {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 #collabo {
     width: 100%;
-    height: 800px;
-    /* overflow: hidden; */
-    background-color: cadetblue;
+    height: 900px;
+    overflow: hidden;
 }
 
 #collabo h1 {
@@ -135,22 +126,57 @@ section #friends ul {
     font-size: 100px;
     color: salmon;
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+#collabo #slideWrap {
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+#collabo #slideWrap > p {
+    width: 100%;
+    position: absolute;
+    top: 450px;
+    text-align: center;
+}
+
+#collabo #slideWrap .prev,
+#collabo #slideWrap .next {
+    display: inline-block;
+    font-family: 'bitbit';
+    font-size: 3.5rem;
+    cursor: pointer;
+    color: rgb(187, 235, 92);
+    line-height: 100px;
+    padding: 0 50px;
+}
+
+
+#collabo #slideWrap .prev:hover,
+#collabo #slideWrap .next:hover {
+    color: salmon;
 }
 
 #collabo .slide {
     width: 4000px;
-    margin: 0 auto;
+    height: auto;
 }
 
-#collabo .slide > div {
+#collabo .slide>div {
     float: left;
     width: 400px;
     height: 400px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#collabo .slide>div:hover {
+    box-shadow: 0 0 20px rgb(187, 235, 92);
 }
 
 #collabo .slide .half {
@@ -170,12 +196,19 @@ section #friends ul {
     cursor: pointer;
     width: 100%;
     height: 100%;
+    opacity: 0;
+}
+
+#collabo .slide div .focus:focus {
+    opacity: 1;
 }
 
 #collabo .slide div img {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #collabo .slide div .text {
@@ -235,19 +268,21 @@ section #friends ul {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
     }
-  }
+}
 
 #insta {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
     padding-bottom: 200px;
+    margin-top: 300px;
 }
 
 #insta h1 {
