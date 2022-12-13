@@ -51,17 +51,17 @@
     position: absolute;
 }
 
-#slider img:nth-of-type(2) {
+#slider .pop:nth-of-type(2) {
     left: 100px;
     top: 300px;
 }
 
-#slider img:nth-of-type(3) {
+#slider .pop:nth-of-type(3) {
     right: 100px;
     top: 100px;
 }
 
-#slider img:nth-of-type(4) {
+#slider .pop:nth-of-type(4) {
     right: 300px;
     top: 500px;
 }
@@ -73,10 +73,39 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 section .pop {
     position: absolute;
+}
+
+section .pop:nth-of-type(1) {
+    top: 100px;
+}
+
+section .pop:nth-of-type(2) {
+    top: 900px;
+    left: 500px;
+}
+
+section .pop:nth-of-type(3) {
+    top: 600px;
+    right: 300px;
+}
+
+section .pop:nth-of-type(4) {
+    top: 1800px;
+}
+
+section .pop:nth-of-type(5) {
+    top: 2000px;
+    left: 500px;
+}
+
+section .pop:nth-of-type(6) {
+    top: 1300px;
+    right: 500px;
 }
 
 section article {
@@ -113,6 +142,40 @@ section #popup li {
     color: #fff;
     text-align: center;
     line-height: 50px;
+    cursor: pointer;
+}
+section #popup li:hover {
+    opacity: 0.6;
+}
+
+section .hidden {
+    position: absolute;
+    left: 39%;
+    width: 25%;
+    height: 35%;
+    background-color: pink;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+}
+
+section .hidden h2 {
+    margin: 40px 0;
+    color: #fff;
+}
+
+section .hidden p {
+    line-height: 1.8rem;
+}
+
+section .hidden p::after {
+    content: "X";
+    display: block;
+    font-family: 'bitbit';
+    font-size: 2rem;
+    color: salmon;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 #collabo {
@@ -256,7 +319,7 @@ section #popup li {
     font-size: 150px;
     color: rgb(187, 235, 92);
     display: inline-block;
-    animation: move 30s linear infinite;
+    animation: move 100s linear infinite;
     animation-play-state: running;
 }
 

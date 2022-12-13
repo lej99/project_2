@@ -1,5 +1,31 @@
 $(function () {
 
+    $('#popup>li:nth-of-type(1)').click(function () {
+        $('.hidden:nth-of-type(1)').fadeIn();
+        $('.hidden').not(':nth-of-type(1)').hide();
+    });
+    $('#popup>li:nth-of-type(2)').click(function () {
+        $('.hidden:nth-of-type(2)').fadeIn();
+        $('.hidden').not(':nth-of-type(2)').hide();
+    });
+    $('#popup>li:nth-of-type(3)').click(function () {
+        $('.hidden:nth-of-type(3)').fadeIn();
+        $('.hidden').not(':nth-of-type(3)').hide();
+    });
+    $('#popup>li:nth-of-type(4)').click(function () {
+        $('.hidden:nth-of-type(4)').fadeIn();
+        $('.hidden').not(':nth-of-type(4)').hide();
+    });
+    $('#popup>li:nth-of-type(5)').click(function () {
+        $('.hidden:nth-of-type(5)').fadeIn();
+        $('.hidden').not(':nth-of-type(5)').hide();
+        
+    });
+
+    $('.hidden').click(function () {
+        $('.hidden').hide();
+    });
+
     var page = 0;
     $('.prev').click(function () {
         page--;
