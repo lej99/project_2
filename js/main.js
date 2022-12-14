@@ -26,7 +26,28 @@ $(function () {
         $('.hidden').hide();
     });
 
-    if (window.matchMedia("(min-width: 960px)").matches) {
+    if (window.matchMedia("(max-width: 400px)").matches) {
+
+        var page = 0;
+        $('.prev').click(function () {
+            page--;
+            if (page < 0) {
+                page = 0;
+                return;
+            }
+            $('.slide').stop().animate({ marginLeft: -300 * page }, 800);
+        });
+    
+        $('.next').click(function () {
+            page++;
+            if (page > $('.slide > div').length - 1) {
+                page = $('.slide > div').length - 1;
+                return;
+            }
+            $('.slide').stop().animate({ marginLeft: -300 * page }, 800);
+        });
+
+    } else if (window.matchMedia("(min-width: 960px)").matches) {
 
     var page = 0;
     $('.prev').click(function () {
