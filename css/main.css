@@ -437,7 +437,7 @@ section .hidden p::after {
     }
 
     section .hidden {
-        top: 160vw;
+        top: 220vw;
         margin-left: -125px;
         width: 250px;
         height: auto;
