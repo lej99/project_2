@@ -316,28 +316,28 @@ section .hidden p::after {
     border-bottom: 3px solid rgb(187, 235, 92);
     overflow: hidden;
     white-space: nowrap;
+    animation-play-state: running;
 }
 
 #ani .slider {
     font-family: 'bitbit';
     font-size: 150px;
+    width: 4537px;
     color: rgb(187, 235, 92);
     display: inline-block;
-    animation: move 100s linear infinite;
-    animation-play-state: running;
+    animation: move 10s linear infinite;
 }
 
-#ani .slider i {
-    padding: 25px;
+#ani .slider u {
+    text-decoration: none;
 }
 
 @keyframes move {
     0% {
         transform: translateX(0%);
     }
-
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
