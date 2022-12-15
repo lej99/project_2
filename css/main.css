@@ -507,6 +507,10 @@ section .hidden p::after {
 }
 
 @media (max-width:767px) and (min-width:400px) {
+    #slider h1 {
+        font-size: 8vw;
+    }
+
     #slider p {
         font-size: 2.5vw;
     }
@@ -520,7 +524,7 @@ section .hidden p::after {
     }
 
     section {
-        height: 5000px;
+        height: 4500px;
     }
 
     section article {
@@ -543,9 +547,16 @@ section .hidden p::after {
         padding: 0 15px 20px 15px;
     }
 
+    #collabo h1 {
+        font-size: 8vw;
+    }
 
     #ani .slider {
         font-size: 10vw;
+    }
+
+    #insta h1 {
+        font-size: 8vw;
     }
 }
 
