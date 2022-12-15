@@ -267,6 +267,7 @@ footer .inner> p {
         cursor: pointer;
         display: inline-block;
         width: auto;
+        height: 40px;
     }
 
     #icon .sticks {
@@ -275,6 +276,8 @@ footer .inner> p {
         display: block;
         height: 6px;
         position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         transition: background .2s ease-out;
         width: 40px;
     }
@@ -339,7 +342,7 @@ footer .inner> p {
         margin-top: 10px;
         left: 6%;
         position: relative;
-        width: 400px;
+        width: 360px;
         color: darkgreen;
     }
 }

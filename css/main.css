@@ -62,7 +62,7 @@
 
 #slider .pop:nth-of-type(4) {
     right: 300px;
-    top: 800px;
+    top: 750px;
 }
 
 section {
@@ -80,31 +80,32 @@ section .pop {
 }
 
 section .pop:nth-of-type(1) {
-    top: 80px;
+    top: 0px;
+    left: 50px;
 }
 
 section .pop:nth-of-type(2) {
     top: 900px;
-    left: 500px;
+    left: 550px;
 }
 
 section .pop:nth-of-type(3) {
-    top: 600px;
+    top: 670px;
     right: 300px;
 }
 
 section .pop:nth-of-type(4) {
-    top: 1800px;
+    top: 1775px;
 }
 
 section .pop:nth-of-type(5) {
-    top: 2000px;
-    left: 500px;
+    bottom: 0px;
+    left: 100px;
 }
 
 section .pop:nth-of-type(6) {
-    top: 1300px;
-    right: 500px;
+    top: 1215px;
+    right: 10px;
 }
 
 section article {
@@ -513,6 +514,14 @@ section .hidden p::after {
 }
 
 @media (max-width:767px) and (min-width:400px) {
+    #slider {
+        height: 700px;
+    }
+
+    #slider .arch {
+        height: 600px;
+    }
+
     #slider h1 {
         font-size: 8vw;
     }
@@ -530,7 +539,7 @@ section .hidden p::after {
     }
 
     section {
-        height: 4500px;
+        height: 3500px;
     }
 
     section article {
