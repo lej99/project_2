@@ -400,6 +400,10 @@ section .hidden p::after {
         height: 800px;
     }
     
+    #slider h1 {
+        font-size: 8vw;
+    }
+
     #slider .arch {
         height: 600px;
     }
@@ -444,6 +448,10 @@ section .hidden p::after {
         padding: 0 15px 20px 15px;
     }
 
+    #collabo h1 {
+        font-size: 8vw;
+    }
+
     #collabo #slideWrap > p {
         width: 100%;
         position: absolute;
@@ -481,6 +489,10 @@ section .hidden p::after {
         color: darkgreen;
         width: 80%;
         overflow: scroll;
+    }
+
+    #insta h1 {
+        font-size: 8vw;
     }
 
     #insta a {
