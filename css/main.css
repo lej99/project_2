@@ -262,15 +262,42 @@ section .hidden p::after {
 #collabo .slide div .focus {
     outline: none;
     border: none;
-    background-color: none;
     cursor: pointer;
     width: 100%;
     height: 100%;
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(187, 235, 92);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 #collabo .slide div .focus:focus {
     opacity: 1;
+}
+
+#collabo .slide div b {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+#collabo .slide div u {
+    color: darkgreen;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+#collabo .slide div span {
+    color: salmon;
+    display: block;
+    height: 50px;
+    line-height: 50px;
 }
 
 #collabo .slide div img {
@@ -279,37 +306,6 @@ section .hidden p::after {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-#collabo .slide div .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(187, 235, 92);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#collabo .slide div .text h2 {
-    font-weight: 700;
-}
-
-#collabo .slide div .text p {
-    color: darkgreen;
-    width: 80%;
-}
-
-#collabo .slide div .text span {
-    color: salmon;
-    display: block;
-    height: 50px;
-    line-height: 50px;
 }
 
 #ani {
@@ -479,16 +475,14 @@ section .hidden p::after {
         margin-top: 80px;
     }
 
-    #collabo .slide div .text h2 {
+    #collabo .slide div h2 {
         font-size: 3vw;
         font-weight: 700;
     }
     
-    #collabo .slide div .text p {
+    #collabo .slide div p {
         font-size: 2.5vw;
         color: darkgreen;
-        width: 80%;
-        overflow: scroll;
     }
 
     #insta h1 {
