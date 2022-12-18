@@ -9,7 +9,7 @@
 
 #slider p {
     position: sticky;
-    top: 10%;
+    top: 100px;
     padding: 2%;
     font-size: 2vW;
     color: darkgreen;
@@ -25,25 +25,25 @@
 
 section {
     width: 100%;
-    height: 4000px;
-    padding: 30% 0;
+    height: 1500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 section article {
     width: 100%;
     height: 600px;
-    margin-bottom: 50%;
     display: flex;
-    overflow: hidden;
-    position: sticky;
-    top: 12.5%;
+    position: relative;
     background-color: rgb(250, 255, 245);
 }
 
 section article > p {
     padding: 2%;
     font-size: 2vW;
-    color: rgb(187, 235, 92);
+    color: darkgreen;
 }
 
 section article > p::after{
@@ -51,7 +51,9 @@ section article > p::after{
     display: block;
     font-family: 'bitbit';
     font-size: 2vw;
-    color: pink;
+    color: salmon;
+    position: relative;
+    left: 65%;
 }
 
 section article p > span {
@@ -119,7 +121,7 @@ section .scroll p > span {
 
 #family_img img {
     width: 16.6%;
-    margin-bottom: 5%;
+    margin-bottom: 100px;
     animation: jump 1s ease-in-out infinite;
     animation-play-state: running;
 }
@@ -137,5 +139,65 @@ section .scroll p > span {
     }
     100% {
         transform: translateY(-10%);
+    }
+}
+
+@media (max-width:399px) {
+    section {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section article {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgb(250, 255, 245);
+    }
+    
+    section article > p::after{
+        content: "scroll\2195";
+        display: inline-block;
+        font-family: 'bitbit';
+        font-size: 2vw;
+        color: salmon;
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media (max-width:767px) and (min-width:400px) {
+    section {
+        width: 100%;
+        height: 1500px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section article {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgb(250, 255, 245);
+    }
+
+    section article > p::after{
+        content: "scroll\2195";
+        display: inline-block;
+        font-family: 'bitbit';
+        font-size: 2vw;
+        color: salmon;
+        position: relative;
+        left: 60%;
     }
 }

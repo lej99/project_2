@@ -13,7 +13,7 @@ $(window).resize(function () {
 
 $(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() > 300) {
             $('.top').fadeIn();
         } else {
             $('.top').fadeOut();

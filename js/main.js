@@ -23,7 +23,7 @@ $(function () {
     });
 
     $('.hidden').click(function () {
-        $('.hidden').hide();
+        $('.hidden').fadeOut();
     });
 
     if (window.matchMedia("(max-width: 400px)").matches) {
