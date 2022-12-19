@@ -13,13 +13,9 @@
     padding: 2%;
     font-size: 2vW;
     color: darkgreen;
-<<<<<<< HEAD
     background-color: rgba(250, 255, 245, 0.8);
     /* color: rgb(250, 255, 245); */
     /* text-shadow: 0 0 20px yellowgreen, 0 0 5px darkgreen; */
-=======
-    text-shadow: 0 0 20px pink;
->>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
     
 }
 
@@ -31,12 +27,7 @@
 
 section {
     width: 100%;
-<<<<<<< HEAD
     height: 2000px;
-=======
-    height: 1500px;
-    position: relative;
->>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -46,7 +37,6 @@ section article {
     width: 100%;
     height: 600px;
     display: flex;
-<<<<<<< HEAD
     background-color: rgb(250, 255, 245);
 
     opacity: 0;
@@ -59,12 +49,6 @@ section article.show {
     transform: translateY(-100px);
 }
 
-=======
-    position: relative;
-    background-color: rgb(250, 255, 245);
-}
-
->>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
 section article > p {
     padding: 2%;
     font-size: 2vW;
@@ -93,7 +77,6 @@ section .scroll {
     border: 6px dotted rgb(187, 235, 92);
     position: relative;
     margin: 2%;
-<<<<<<< HEAD
 }
 /* 스크롤바 영역에 대한 설정 */
 section .scroll::-webkit-scrollbar {
@@ -109,8 +92,6 @@ section .scroll::-webkit-scrollbar-thumb {
 /* 스크롤바 뒷 배경에 대한 설정 */
 section .scroll::-webkit-scrollbar-track {
     background: rgb(255, 237, 240);  /*스크롤바 뒷 배경 색상*/
-=======
->>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
 }
 
 section .scroll > li {
