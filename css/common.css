@@ -75,7 +75,7 @@ footer .footerimg {
     100% {
         transform: translateY(0%);
     }
-  }
+}
 
 footer .inner {
     width: 100%;

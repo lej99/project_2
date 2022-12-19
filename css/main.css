@@ -62,7 +62,7 @@
 
 #slider .pop:nth-of-type(4) {
     right: 300px;
-    top: 750px;
+    top: 780px;
 }
 
 section {
@@ -325,7 +325,7 @@ section .hidden p::after {
     width: 4537px;
     color: rgb(187, 235, 92);
     display: inline-block;
-    animation: move 10s linear infinite;
+    animation: move 50s linear infinite;
 }
 
 #ani .slider u {
@@ -513,7 +513,7 @@ section .hidden p::after {
     }
 }
 
-@media (max-width:767px) and (min-width:400px) {
+@media (max-width:549px) and (min-width:400px) {
     #slider {
         height: 600px;
     }
@@ -560,6 +560,72 @@ section .hidden p::after {
 
     section .hidden {
         top: 160vw;
+        margin-left: -170px;
+        width: 340px;
+        height: auto;
+        padding: 0 15px 20px 15px;
+    }
+
+    #collabo h1 {
+        font-size: 8vw;
+    }
+
+    #ani .slider {
+        font-size: 10vw;
+    }
+
+    #insta h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width:767px) and (min-width:550px) {
+    #slider {
+        height: 600px;
+    }
+
+    #slider .arch {
+        height: 500px;
+    }
+
+    #slider h1 {
+        font-size: 8vw;
+    }
+
+    #slider p {
+        font-size: 2.5vw;
+    }
+
+    #slider > img {
+        max-width: 350px;
+    }
+
+    body .pop {
+        display: none;
+    }
+
+    section {
+        height: 3500px;
+    }
+
+    section .name {
+        font-size: 10vw;
+    }
+
+    section article {
+        justify-content: center;
+    }
+
+    section article > ul {
+        min-width: 25vw;
+    }
+
+    section article #popup {
+        min-width: 340px;
+    }
+
+    section .hidden {
+        top: 100vw;
         margin-left: -170px;
         width: 340px;
         height: auto;

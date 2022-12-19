@@ -2,17 +2,24 @@
 
 #slider {
     width: 100%;
-    height: 800px;
-    background-color: gold;
+    min-height: 600px;
     background: url(img/kero_slider.jpg) no-repeat center;
     background-size: cover;
 }
 
 #slider p {
+    position: sticky;
+    top: 100px;
     padding: 2%;
     font-size: 2vW;
-    color: rgb(250, 255, 245);
-    text-shadow: 0 0 20px rgb(187, 235, 92);
+    color: darkgreen;
+<<<<<<< HEAD
+    background-color: rgba(250, 255, 245, 0.8);
+    /* color: rgb(250, 255, 245); */
+    /* text-shadow: 0 0 20px yellowgreen, 0 0 5px darkgreen; */
+=======
+    text-shadow: 0 0 20px pink;
+>>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
     
 }
 
@@ -24,25 +31,54 @@
 
 section {
     width: 100%;
-    height: 3000px;
-    background-color: aqua;
+<<<<<<< HEAD
+    height: 2000px;
+=======
+    height: 1500px;
+    position: relative;
+>>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 section article {
-    width: 80%;
+    width: 100%;
     height: 600px;
-    background-color: green;
     display: flex;
-    overflow: hidden;
+<<<<<<< HEAD
+    background-color: rgb(250, 255, 245);
+
+    opacity: 0;
+    transform: translateY(0);
+    transition: 0.5s all;
 }
 
-section article p {
+section article.show {
+    opacity: 1;
+    transform: translateY(-100px);
+}
+
+=======
+    position: relative;
+    background-color: rgb(250, 255, 245);
+}
+
+>>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
+section article > p {
     padding: 2%;
     font-size: 2vW;
+    color: darkgreen;
+}
+
+section article > p::after{
+    content: "scroll\2195";
+    display: block;
+    font-family: 'bitbit';
+    font-size: 2vw;
+    color: salmon;
+    position: relative;
+    left: 65%;
 }
 
 section article p > span {
@@ -53,20 +89,63 @@ section article p > span {
 
 section .scroll {
     flex: 1;
-    overflow: scroll;
+    overflow: auto;
     border: 6px dotted rgb(187, 235, 92);
+    position: relative;
+    margin: 2%;
+<<<<<<< HEAD
+}
+/* 스크롤바 영역에 대한 설정 */
+section .scroll::-webkit-scrollbar {
+    width: 10px;
+} 
+/* 스크롤바 막대에 대한 설정 */
+section .scroll::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: pink; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+/* 스크롤바 뒷 배경에 대한 설정 */
+section .scroll::-webkit-scrollbar-track {
+    background: rgb(255, 237, 240);  /*스크롤바 뒷 배경 색상*/
+=======
+>>>>>>> f2861db1c07952b34e18357b39a8f6e0f2970288
 }
 
 section .scroll > li {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 2%;
-    background-color: aliceblue;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    left: 0;
+}
+
+section .scroll > li:nth-child(even) {
+    left: 50%;
+}
+
+section .scroll img {
+    max-width: 100%;
+}
+
+section .scroll img:hover {
+    animation: jump 0.5s ease-in-out none;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 section .scroll p {
+    margin-top: -20%;
     padding: 2%;
     font-size: 1vW;
 }
@@ -75,4 +154,93 @@ section .scroll p > span {
     display: block;
     font-family: 'bitbit';
     font-size: 2vW;
+}
+
+#family_img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#family_img img {
+    width: 16.6%;
+    margin-bottom: 100px;
+    animation: jump 1s ease-in-out infinite;
+    animation-play-state: running;
+}
+
+#family_img img:nth-child(even) {
+    animation: jump_down 1s ease-in-out infinite;
+}
+
+@keyframes jump_down {
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@media (max-width:399px) {
+    section {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section article {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgb(250, 255, 245);
+    }
+    
+    section article > p::after{
+        content: "scroll\2195";
+        display: inline-block;
+        font-family: 'bitbit';
+        font-size: 2vw;
+        color: salmon;
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media (max-width:767px) and (min-width:400px) {
+    section {
+        width: 100%;
+        height: 1500px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section article {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgb(250, 255, 245);
+    }
+
+    section article > p::after{
+        content: "scroll\2195";
+        display: inline-block;
+        font-family: 'bitbit';
+        font-size: 2vw;
+        color: salmon;
+        position: relative;
+        left: 60%;
+    }
 }
