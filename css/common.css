@@ -92,6 +92,7 @@ footer .inner .top {
     font-family: 'bitbit';
     font-size: 3vw;
     position: fixed;
+    z-index: 3;
     bottom: 100px;
     right: 50px;
     text-align: center;
