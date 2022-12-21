@@ -408,7 +408,7 @@ section .hidden p::after {
     }
 
     #slider p {
-        font-size: 1.2vw;
+        font-size: 4vw;
     }
 
     #slider>img {
@@ -563,7 +563,7 @@ section .hidden p::after {
     }
 
     #slider p {
-        font-size: 2.5vw;
+        font-size: 3.7vw;
     }
 
     #slider>img {
