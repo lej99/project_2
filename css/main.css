@@ -150,6 +150,7 @@ section #popup li {
     line-height: 50px;
     cursor: pointer;
 }
+
 section #popup li:hover {
     opacity: 0.6;
 }
@@ -207,7 +208,7 @@ section .hidden p::after {
     margin: 0 auto;
 }
 
-#collabo #slideWrap > p {
+#collabo #slideWrap>p {
     width: 100%;
     position: absolute;
     top: 450px;
@@ -336,6 +337,7 @@ section .hidden p::after {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -396,7 +398,7 @@ section .hidden p::after {
     #slider {
         height: 500px;
     }
-    
+
     #slider h1 {
         font-size: 8vw;
     }
@@ -409,7 +411,7 @@ section .hidden p::after {
         font-size: 1.2vw;
     }
 
-    #slider > img {
+    #slider>img {
         max-width: 250px;
     }
 
@@ -429,7 +431,7 @@ section .hidden p::after {
         justify-content: center;
     }
 
-    section article > ul {
+    section article>ul {
         min-width: 25vw;
     }
 
@@ -449,7 +451,7 @@ section .hidden p::after {
         font-size: 8vw;
     }
 
-    #collabo #slideWrap > p {
+    #collabo #slideWrap>p {
         width: 100%;
         position: absolute;
         top: 300px;
@@ -480,10 +482,44 @@ section .hidden p::after {
         font-size: 3vw;
         font-weight: 700;
     }
-    
+
     #collabo .slide div p {
         font-size: 2.5vw;
         color: darkgreen;
+    }
+
+    #collabo .slide div b {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #collabo .slide div u {
+        color: darkgreen;
+        padding: 0 50px;
+        text-decoration: none;
+        overflow: auto;
+    }
+    /* 스크롤바 영역에 대한 설정 */
+    #collabo .slide div u::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* 스크롤바 막대에 대한 설정 */
+    #collabo .slide div u::-webkit-scrollbar-thumb {
+        height: 10%;/* 스크롤바의 길이 */
+        background: pink;/* 스크롤바의 색상 */
+        border-radius: 10px;
+    }
+    /* 스크롤바 뒷 배경에 대한 설정 */
+    #collabo .slide div u::-webkit-scrollbar-track {
+        background: rgb(255, 237, 240);/*스크롤바 뒷 배경 색상*/
+    }
+
+    #collabo .slide div span {
+        color: salmon;
+        display: block;
+        height: 40px;
+        line-height: 20px;
+        margin-top: 20px;
     }
 
     #insta h1 {
@@ -530,7 +566,7 @@ section .hidden p::after {
         font-size: 2.5vw;
     }
 
-    #slider > img {
+    #slider>img {
         max-width: 350px;
     }
 
@@ -550,7 +586,7 @@ section .hidden p::after {
         justify-content: center;
     }
 
-    section article > ul {
+    section article>ul {
         min-width: 25vw;
     }
 
@@ -596,7 +632,7 @@ section .hidden p::after {
         font-size: 2.5vw;
     }
 
-    #slider > img {
+    #slider>img {
         max-width: 350px;
     }
 
@@ -616,7 +652,7 @@ section .hidden p::after {
         justify-content: center;
     }
 
-    section article > ul {
+    section article>ul {
         min-width: 25vw;
     }
 
@@ -662,7 +698,7 @@ section .hidden p::after {
         justify-content: center;
     }
 
-    section article > ul {
+    section article>ul {
         min-width: 25vw;
     }
 
