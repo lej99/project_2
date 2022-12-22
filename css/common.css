@@ -41,7 +41,7 @@ header {
     font-size: 2vw;
     background-color: rgb(187, 235, 92);
     width: 100%;
-    height: auto;
+    height: 100px;
     line-height: 100px;
     position: sticky;
     top: 0;
@@ -172,6 +172,14 @@ footer .inner> p {
         padding: 0 10px;
     }
 
+    header nav a {
+        height: 100px;
+    }
+
+    header nav a img {
+        margin-top: -20px;
+    }
+
     #icon {
         cursor: pointer;
         display: inline-block;
@@ -262,6 +270,14 @@ footer .inner> p {
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
+    }
+
+    header nav a {
+        height: 100px;
+    }
+
+    header nav a img {
+        margin-top: -20px;
     }
 
     #icon {
